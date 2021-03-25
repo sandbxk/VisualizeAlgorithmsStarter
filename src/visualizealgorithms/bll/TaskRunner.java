@@ -14,10 +14,10 @@ public class TaskRunner {
      * @param data
      * @return
      */
-    public long runTask(IAlgorithm algorithm, int[] data) {
+    public long runTask(IAlgorithm algorithm, Comparable[] data) {
+    //public long runTask(IAlgorithm algorithm, int[] data) {
 
-
-        algorithm.setData(data);
+            algorithm.setData(data);
 
         long startTime = System.currentTimeMillis();
         algorithm.doWork();
