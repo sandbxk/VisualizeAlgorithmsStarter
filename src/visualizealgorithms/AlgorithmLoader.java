@@ -1,11 +1,10 @@
 package visualizealgorithms;
 
 //Project imports
-import visualizealgorithms.bll.algorithm.IAlgorithm;
-import visualizealgorithms.bll.algorithm.InsertionSort;
-import visualizealgorithms.bll.algorithm.QuickSort;
+import visualizealgorithms.bll.algorithm.*;
 
 //Java imports
+import javax.swing.*;
 import java.util.ArrayList;
 
 /**
@@ -23,6 +22,10 @@ public class AlgorithmLoader {
         //Add implemented/selected algorithms here..
         algorithms.add(new InsertionSort());
         algorithms.add(new QuickSort());
+        algorithms.add(new MergeSort());
+        algorithms.add(new JavaSort());
+        algorithms.add(new JavaSort2());
+        algorithms.add(new LinearSearch());
 
         //more algorithms here :)
     }
